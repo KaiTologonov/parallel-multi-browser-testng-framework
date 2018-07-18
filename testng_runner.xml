@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="WebOrders Automation Regression Tests" verbose="2" parallel="none" thread-count="2">
+
+	<test name="Login Tests On Safari">
+	<parameter name="browser" value="safari"></parameter>
+		<packages>
+			<package name="com.cbt.tests.login"></package>
+		</packages>
+	</test>
+
+	<test name="Login Tests on Firefox">
+	<parameter name="browser" value="firefox"></parameter>
+		<packages>
+			<package name="com.cbt.tests.login"></package>
+		</packages>
+	</test>
+
+	<test name="Login Tests on Chrome">
+		<packages>
+			<package name="com.cbt.tests.login"></package>
+		</packages>
+	</test>
+</suite>
